@@ -68,13 +68,7 @@ int main()
 
     cout << "The result of SumOfList is: " << SumOfList(numbers) << endl;
     cout << "The result of ProductOfList is: " << ProductOfList(numbers) << endl;
- 
-    cout << "The reverse order: ";
 
-    for(int i=0; i<reverseVec.size(); i++) {
-        cout << reverseVec[i] << " ";
-    }
-    cout << endl;
    
 }
 
