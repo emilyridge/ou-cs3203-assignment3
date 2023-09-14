@@ -69,6 +69,8 @@ int main()
     cout << "The result of SumOfList is: " << SumOfList(numbers) << endl;
     cout << "The result of ProductOfList is: " << ProductOfList(numbers) << endl;
 
+
+    //Changes for Part10 !!!
    
 }
 
