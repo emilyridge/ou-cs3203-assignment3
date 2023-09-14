@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 
+
 using namespace std;
 
 int SumOfList(vector<int> nums) {
@@ -36,7 +37,15 @@ int ProductOfList(vector<int> nums) {
     return product;
 }
 
+vector<int> ReverseOrder(vector<int> oldVec) {
+    vector<int> newVec;
 
+    for(int i=oldVec.size(); i>0; i--) {
+        newVec.push_back(oldVec[i-1]);
+    }
+    return newVec;
+
+}
 
 int main()
 {
@@ -54,9 +63,12 @@ int main()
         numbers.push_back(x);
     }
     
+    vector<int> reverseVec;
+    reverseVec = ReverseOrder(numbers);
 
     cout << "The result of SumOfList is: " << SumOfList(numbers) << endl;
     cout << "The result of ProductOfList is: " << ProductOfList(numbers) << endl;
+ 
 
    
 }
