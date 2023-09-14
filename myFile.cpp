@@ -20,14 +20,30 @@ int SumOfList(vector<int> nums) {
     return sum;
 }
 
+int ProductOfList(vector<int> nums) {
+
+    int k = nums.size();
+    int product = 1;
+    if(k == 0) {
+        product = 0;
+    }
+    else {
+        for(int i=0; i<k; i++) {
+            product = product * nums[i];
+        }
+    }
+
+    return product;
+}
 
 
 
 int main()
 {
-    vector<int> numbers {4, 3, 2, 12, 200};
+    vector<int> numbers {4, 3, 2};
 
-    cout << "The result is: " << SumOfList(numbers) << endl;
+    cout << "The result of SumOfList is: " << SumOfList(numbers) << endl;
+    cout << "The result of ProductOfList is " << ProductOfList(numbers) << endl;
 
    
 }
