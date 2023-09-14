@@ -40,10 +40,23 @@ int ProductOfList(vector<int> nums) {
 
 int main()
 {
-    vector<int> numbers {4, 3, 2};
+    vector<int> numbers;
+    int size = 0;
+    int x = 0;
+
+    cout << "How many numbers would you like to enter? ";
+    cin >> size;
+    cout << "Enter your " << size << " numbers: ";
+    cout << endl;
+
+    for(int i=0; i<size; i++) {
+        cin >> x;
+        numbers.push_back(x);
+    }
+    
 
     cout << "The result of SumOfList is: " << SumOfList(numbers) << endl;
-    cout << "The result of ProductOfList is " << ProductOfList(numbers) << endl;
+    cout << "The result of ProductOfList is: " << ProductOfList(numbers) << endl;
 
    
 }
